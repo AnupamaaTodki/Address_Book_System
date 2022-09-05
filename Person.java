@@ -9,9 +9,6 @@ package com.addressbooksystem;
 		private long phonenum;
 		private String email;
 	
-		Person(){
-	
-		}
 		public String getFname() {
 			return fname;
 		}
@@ -54,6 +51,13 @@ package com.addressbooksystem;
 		public void setEmail(String email) {
 			this.email = email;
 		}
+		@Override
+		public String toString() {
+			return "Person [First name=" + fname + ", Last name=" + lname + ", City=" + city + ", State=" + state + ", Zip="
+					+ zip + ", Phonenumber=" + phonenum + ", E-mail=" + email + "]";
+		}
+		
+		
 	
 
 }
