@@ -1,59 +1,87 @@
 package com.addressbooksystem;
 
-    public class Person {
-		private String fname;
-		private String lname;
-		private String city;
-		private String state;
-		private long zip;
-		private long phonenum;
-		private String email;
+public class Person {
+	String firstName;
+	String lastName;
+	String address;
+	String city;
+	String state;
+	String zip;
+	String phoneNumber;
+	String email;
 	
-		Person(){
-	
-		}
-		public String getFname() {
-			return fname;
-		}
-		public void setFname(String fname) {
-			this.fname = fname;
-		}
-		public String getLname() {
-			return lname;
-		}
-		public void setLname(String lname) {
-			this.lname = lname;
-		}
-		public String getCity() {
-			return city;
-		}
-		public void setCity(String city) {
-			this.city = city;
-		}
-		public String getState() {
-			return state;
-		}
-		public void setState(String state) {
-			this.state = state;
-		}
-		public long getZip() {
-			return zip;
-		}
-		public void setZip(long zip) {
-			this.zip = zip;
-		}
-		public long getPhonenum() {
-			return phonenum;
-		}
-		public void setPhonenum(long phonenum) {
-			this.phonenum = phonenum;
-		}
-		public String getEmail() {
-			return email;
-		}
-		public void setEmail(String email) {
-			this.email = email;
-		}
-	
+	Person(String firstName, String lastName, String address, String city, String state, String zip, String phoneNumber, String email) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+		this.city = city;
+		this.state = state;
+		this.zip = zip;
+		this.phoneNumber = phoneNumber;
+		this.email = email;
+	}
 
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		if (firstName != "") this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		if (lastName != "") this.lastName = lastName;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		if (address != "") this.address = address;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		if (city != "") this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		if (state != "") this.state = state;
+	}
+
+	public String getZip() {
+		return zip;
+	}
+
+	public void setZip(String zip) {
+		if (zip != "") this.zip = zip;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		if (phoneNumber != "") this.phoneNumber = phoneNumber;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		if (email != "") this.email = email;
+	}
 }
